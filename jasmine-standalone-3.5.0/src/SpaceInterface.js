@@ -1,8 +1,8 @@
 // $(document).ready(function(){
 //   var listspace = new ListSpace();
 //
-//   $('#id').on('click', function() {
-//
+//   $('#name').on('click', function(name) {
+//     ListSpace.name(name)
 //   });
-// });
 //
+// });
