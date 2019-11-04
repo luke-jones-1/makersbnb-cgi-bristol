@@ -3,6 +3,7 @@
 
 module.exports = function(config) {
   config.set({
+    failOnEmptyTestSuite: false,
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -64,6 +65,10 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
+<<<<<<< HEAD
     concurrency: Infinity
+=======
+    concurrency: Infinity,
+>>>>>>> 9186b77b5274c83f80669c0a8ce8df3f7c58766f
   })
 }

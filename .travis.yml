@@ -3,8 +3,13 @@ node_js:
     - "0.10"
 services:
     - xvfb
-script: node_modules/karma/bin/karma start my.conf.js --single-run
+    - postgresql
 before_install:
     - export DISPLAY=:99.0
+    - gem install bundler
 before_script:
+    - bundle install
     - npm install karma
+script:
+    # - karma start my.conf.js --single-run
+    - bundle exec rspec
