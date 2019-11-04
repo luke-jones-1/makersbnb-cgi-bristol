@@ -14,4 +14,8 @@ class MakersBNB < Sinatra::Base
     'Thank you for listing your space!'
   end
 
+  get '/hire_space' do
+    erb (:hire_space)
+  end
+
 end
