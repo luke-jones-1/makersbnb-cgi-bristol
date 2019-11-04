@@ -20,8 +20,5 @@
     "karma": "^4.4.1",
     "karma-firefox-launcher": "^1.2.0",
     "karma-jasmine": "^2.0.1"
-  },
-  "dependencies": {
-    "jasmine": "^3.5.0"
   }
 }
