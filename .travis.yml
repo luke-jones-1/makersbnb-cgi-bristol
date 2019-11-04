@@ -7,7 +7,7 @@ services:
 before_install:
     - export DISPLAY=:99.0
 before_script:
-    - bundle install
+    # - bundle install
     - npm install karma
 script:
     - node_modules/karma/bin/karma start my.conf.js --single-run
