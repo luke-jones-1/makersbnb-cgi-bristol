@@ -1,9 +1,15 @@
 language: node_js
 node_js:
     - "0.10"
-script: node_modules/karma/bin/karma start my.conf.js --single-run
+services:
+    - xvfb
+    - postgresql
 before_install:
     - export DISPLAY=:99.0
-    - sh -e /etc/init.d/xvfb start
+    - gem install bundler
 before_script:
-    - npm install
+    - bundle install
+    - npm install karma
+script:
+    # - karma start my.conf.js --single-run
+    - bundle exec rspec
