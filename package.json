@@ -19,6 +19,7 @@
   "devDependencies": {
     "jasmine": "^3.5.0",
     "karma": "^4.4.1",
+    "karma-cli": "*",
     "karma-firefox-launcher": "^1.2.0",
     "karma-jasmine": "^2.0.1"
   }
