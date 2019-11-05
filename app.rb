@@ -26,8 +26,8 @@ class MakersBNB < Sinatra::Base
     File.read('./views/sign_up.html')
   end
 
-  post '/sign_up' do
-    'Thank you for signing up!'
+  get '/view_listed_spaces' do
+    File.read('./views/view_listed_spaces.html')
   end
 
 end
