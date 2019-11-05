@@ -3,6 +3,9 @@ require 'sinatra/base'
 
 class MakersBNB < Sinatra::Base
 
+  set :static, true
+  set :public_folder, Proc.new { File.join(root, "interface") }
+
   get '/' do
     File.read('./views/index.html')
   end
