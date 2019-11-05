@@ -8,4 +8,10 @@ User.prototype.create() {
 
 }
 
-User.prototype.
+User.prototype.signIn() {
+
+}
+
+User.prototype.dataRequest(){
+
+}
