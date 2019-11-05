@@ -12,5 +12,5 @@ ListSpace.prototype.all = function(){
   var connectionString = "postgres://Student:@localhost/ip:5432/makersbnb_test";
   var pgClient = new pg.Client(connectionString);
   var query = pgClient.query('SELECT * FROM listings;');
-  return query;
+  query
 };
