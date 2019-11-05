@@ -6,7 +6,13 @@ feature 'Index' do
 
   scenario 'User can select to list a new space' do
     visit '/'
-    click_button('Submit')
+    click_button('List a New Space')
     expect(page).to have_content 'List a New Space'
+  end
+
+  scenario 'User can select to hire a space' do
+    visit ('/')
+    click_button('Hire a Space')
+    expect(page).to have_content 'Hire a Space'
   end
 end
