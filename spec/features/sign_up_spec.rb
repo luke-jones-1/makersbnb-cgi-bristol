@@ -9,6 +9,8 @@ feature 'Sign Up' do
     visit('/')
     click_button('Sign Up')
     fill_in('First Name', with: 'Will')
+    fill_in('Last Name', with: 'Bath')
+    fill_in('Email Address', with: 'a@b.c')
     click_button('Submit')
     expect(page).to have_content 'Thank you for signing up!'
   end
