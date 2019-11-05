@@ -18,10 +18,12 @@
   "homepage": "https://github.com/luke-jones-1/makersbnb-cgi-bristol#readme",
   "devDependencies": {
     "jasmine": "^3.5.0",
+    "jquery": "^3.4.1",
     "karma": "*",
     "karma-cli": "*",
     "karma-firefox-launcher": "*",
-    "karma-jasmine": "*"
+    "karma-jasmine": "*",
+    "pg": "^7.12.1"
   },
   "directories": {
     "lib": "lib"
