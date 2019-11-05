@@ -1,13 +1,14 @@
 require 'sinatra/base'
+# require ''
 
 class MakersBNB < Sinatra::Base
 
   get '/' do
-    erb (:index)
+    File.read('./views/index.html')
   end
 
   get '/list_space' do
-    erb (:list_space)
+    File.read('./views/list_space.html')
   end
 
   post '/' do
@@ -15,11 +16,11 @@ class MakersBNB < Sinatra::Base
   end
 
   get '/hire_space' do
-    erb (:hire_space)
+    File.read('./views/hire_space.html')
   end
 
   get '/sign_up' do
-    erb (:sign_up)
+    File.read('./views/sign_up.html')
   end
 
   post '/sign_up' do
