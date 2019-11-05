@@ -9,7 +9,7 @@ before_install:
     - gem install bundler
 before_script:
     - bundle install
-    - npm install karma --save-dev
+    # - npm install karma --save-dev
 script:
     - karma start my.conf.js --single-run
     - bundle exec rspec
