@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/karma start --single-run"
   },
   "repository": {
     "type": "git",
@@ -17,16 +17,21 @@
   },
   "homepage": "https://github.com/luke-jones-1/makersbnb-cgi-bristol#readme",
   "devDependencies": {
-    "jasmine": "^3.5.0",
-    "karma": "*",
-    "karma-cli": "*",
-    "karma-firefox-launcher": "*",
-    "karma-jasmine": "*"
+    "jquery": "^3.4.1",
+    "pg": "^7.12.1"
   },
   "directories": {
     "lib": "lib"
   },
   "dependencies": {
+<<<<<<< HEAD
     "pg": "^7.12.1"
+=======
+  "name": "node-pg",
+  "author": "Javascript Point",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pg": "^6.0.1"
+>>>>>>> 48168f5d4d9b500cb11b6281ceca887564b66b87
   }
 }
