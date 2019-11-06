@@ -10,5 +10,5 @@ before_install:
 before_script:
     - bundle install
 script:
-    - karma start my.conf.js --single-run
+    # - karma start karma.conf.js --single-run
     - bundle exec rspec
