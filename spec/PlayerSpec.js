@@ -1,10 +1,12 @@
 describe("Player", function() {
   var player;
   var song;
+  var setup;
 
   beforeEach(function() {
     player = new Player();
     song = new Song();
+    // setup = new SetupTestDatabaseJS();
   });
 
   it("should be able to play a Song", function() {
