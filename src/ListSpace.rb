@@ -15,7 +15,6 @@ class ListSpace
   end
 
   def self.create(name:, cost:, address:, description:)
-    return false unless is_url?(url)
     result = DatabaseConnection.query("INSERT INTO listings (name, cost, address, description) VALUES('#{name}', '#{cost}', '#{address}', '#{description}') RETURNING name, cost, address, description;")
     ListSpace.new(name: listing['name'], cost: listing['cost'], address: listing['address'], description: listing['description'])
   end
