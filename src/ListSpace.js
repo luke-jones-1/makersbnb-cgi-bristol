@@ -1,4 +1,7 @@
 'use strict';
+const { pg } = require("pg");
+var connectionString = "postgres://Student:@localhost:5432/makersbnb_test";
+var pgClient = new pg.Connect(connectionString);
 
 function ListSpace(name='', cost=0, address='', description=''){
   this.name = name;
@@ -8,9 +11,6 @@ function ListSpace(name='', cost=0, address='', description=''){
 };
 
 ListSpace.prototype.all = function(){
-  var pg = require(‘pg’);
-  var connectionString = "postgres://Student:@localhost/ip:5432/makersbnb_test";
-  var pgClient = new pg.Client(connectionString);
   var query = pgClient.query('SELECT * FROM listings;');
-  query
+  return query;
 };

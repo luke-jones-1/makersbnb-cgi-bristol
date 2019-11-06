@@ -29,6 +29,10 @@
     "lib": "lib"
   },
   "dependencies": {
-    "pg": "^7.12.1"
+  "name": "node-pg",
+  "author": "Javascript Point",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pg": "^6.0.1"
   }
 }

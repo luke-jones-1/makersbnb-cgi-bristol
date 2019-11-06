@@ -30,4 +30,11 @@ describe('ListSpace',function(){
     });
   });
 
+  describe('database tests',function(){
+    it('it can return all',function(){
+      console.log(listspace.all)
+      expect(listspace.all).toEqual();
+    });
+  });
+
 });
