@@ -1,7 +1,9 @@
 'use strict';
-const { pg } = require("pg");
+var pg = require("pg");
 var connectionString = "postgres://Student:@localhost:5432/makersbnb_test";
-var pgClient = new pg.Connect(connectionString);
+var pgClient = pg.Client(connectionString);
+
+
 
 function ListSpace(name='', cost=0, address='', description=''){
   this.name = name;
