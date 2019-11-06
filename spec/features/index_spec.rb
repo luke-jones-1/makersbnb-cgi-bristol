@@ -15,4 +15,10 @@ feature 'Index' do
     click_button('Hire a Space')
     expect(page).to have_content 'Hire a Space'
   end
+
+  scenario 'User can select to sign up' do
+    visit '/'
+    click_button('Sign Up')
+    expect(page).to have_content 'Sign up for Makers BNB'
+  end
 end

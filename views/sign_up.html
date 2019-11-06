@@ -1,11 +1,22 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="signUpInterface.js"></script>
+</head>
+
+<body>
 <h1>Sign up for Makers BNB</h1>
 <p>Please fill in your details to register for Makers BNB:</p>
-<form action='/sign_up' method='post'>
+<form id='formSignUp'>
   First Name: <input type='text' name='First Name' id='firstName'>
   <br>
   Last Name: <input type='text' name='Last Name' id='lastName'>
   <br>
   Email Address: <input type='email' name='Email Address' id='emailAddress'>
   <br>
-  <input type='submit' name='Submit'>
+  <button onclick='validateForm()'>Submit</button>
 </form>
+
+<button id='test'></button>
+</body>
+</html>
