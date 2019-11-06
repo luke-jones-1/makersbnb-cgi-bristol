@@ -6,7 +6,6 @@ describe("Player", function() {
   beforeEach(function() {
     player = new Player();
     song = new Song();
-    // setup = new SetupTestDatabaseJS();
   });
 
   it("should be able to play a Song", function() {
