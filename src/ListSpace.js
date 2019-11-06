@@ -1,10 +1,10 @@
 'use strict';
 
 function ListSpace(name='', cost=0, address='', description=''){
-  this.name = name;
-  this.cost = cost;
-  this.address = address;
-  this.description = description;
+  this._name = name;
+  this._cost = cost;
+  this._address = address;
+  this._description = description;
 };
 
 ListSpace.prototype.all = function(){

@@ -1,9 +1,8 @@
 // Karma configuration
-// Generated on Mon Nov 04 2019 12:18:30 GMT+0000 (Greenwich Mean Time)
+// Generated on Wed Nov 06 2019 09:28:54 GMT+0000 (Greenwich Mean Time)
 
 module.exports = function(config) {
   config.set({
-    failOnEmptyTestSuite: false,
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -13,12 +12,11 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
-    // plugins: ['karama-jasmine', karma-]
-
 
     // list of files / patterns to load in the browser
     files: [
-      './src/*.js, ./spec/*Spec.js'
+      'src/*.js',
+      'spec/*Spec.js'
     ],
 
 
@@ -53,12 +51,12 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Firefox'],
+    browsers: ['Chrome', 'Firefox'],
 
 
     // Continuous Integration mode
@@ -67,6 +65,6 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity,
+    concurrency: Infinity
   })
 }

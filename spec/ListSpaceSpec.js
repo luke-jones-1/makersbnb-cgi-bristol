@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 describe('ListSpace',function(){
   var listspace;
@@ -8,25 +8,25 @@ describe('ListSpace',function(){
 
   describe('name tests',function(){
     it('can view name',function(){
-      expect(listspace.name).toEqual('name');
+      expect(listspace._name).toEqual('name');
     });
   });
 
   describe('cost tests',function(){
     it('can view cost',function(){
-      expect(listspace.cost).toEqual(3);
+      expect(listspace._cost).toEqual(3);
     });
   });
 
   describe('address tests',function(){
     it('can view address',function(){
-      expect(listspace.address).toEqual('address');
+      expect(listspace._address).toEqual('address');
     });
   });
 
   describe('description tests',function(){
     it('can view description',function(){
-      expect(listspace.description).toEqual('description');
+      expect(listspace._description).toEqual('description');
     });
   });
 

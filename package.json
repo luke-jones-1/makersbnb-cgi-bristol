@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/karma start --single-run"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "jasmine": "^3.5.0",
     "jquery": "^3.4.1",
     "karma": "*",
+    "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "*",
     "karma-firefox-launcher": "*",
     "karma-jasmine": "*",
