@@ -17,7 +17,5 @@ ListSpace.prototype.all = function(){
   return query;
 };
 
-var query = pgClient.query('SELECT * FROM listings;');
-console.log(1)
-console.log(query);
-console.log(2)
+var temp = new ListSpace
+console.log(temp.all())
