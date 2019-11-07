@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 require 'pg'
 
 def setup_test_database
-  p 'putting the DB in DeadBeat.....'
+  connection = PG.connect(dbname: 'bookmark_manager_test')
 
-  connection = PG.connect(dbname: 'makersbnb_test')
-
-  connection.exec("TRUNCATE listings;")
+  connection.exec('TRUNCATE bookmarks, comments, bookmarks_tags, tags;')
 end

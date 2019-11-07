@@ -1,5 +1,5 @@
 require 'sinatra/base'
-# require ''
+require './setup_test_database'
 
 class MakersBNB < Sinatra::Base
 
