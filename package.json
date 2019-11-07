@@ -19,5 +19,5 @@
   "devDependencies": {
     "jquery": "^3.4.1",
     "pg": "^7.12.1"
-  },
+  }
 }
