@@ -30,4 +30,8 @@ class MakersBNB < Sinatra::Base
     erb (:view_listed_spaces)
   end
 
+  post '/sign_up' do
+    'Thank you for signing up!'
+  end
+
 end
