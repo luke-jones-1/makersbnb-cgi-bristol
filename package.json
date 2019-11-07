@@ -20,10 +20,4 @@
     "jquery": "^3.4.1",
     "pg": "^7.12.1"
   },
-  "directories": {
-    "lib": "lib"
-  },
-  "dependencies": {
-    "pg": "^7.12.1"
-  }
 }
