@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  $('#main').click(function() {
+    validateForm();
+  });
+
   // $('#submitSignUp').click(function() {
   function validateForm() {
     var params = $('#formSignUp').serializeArray();
@@ -10,9 +14,9 @@ $(document).ready(function() {
     } else if (params[2]['value'] === "") {
       alert('Please enter your Email Address.')
     } else {
-      location.assign("http://localhost:9292/index.html");
+      location.assign("http://localhost:9292/index.erb");
     };
-  });
+  };
 
   $('#test').click(function() {
     var params = $('#formSignUp').serializeArray();
@@ -22,4 +26,4 @@ $(document).ready(function() {
     };
   });
 
-})
+});
