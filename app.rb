@@ -7,11 +7,11 @@ class MakersBNB < Sinatra::Base
   set :public_folder, Proc.new { File.join(root, "interface") }
 
   get '/' do
-    File.read('./views/index.html')
+    erb (:index)
   end
 
   get '/list_space' do
-    File.read('./views/list_space.html')
+    erb (:list_space)
   end
 
   post '/' do
@@ -19,15 +19,15 @@ class MakersBNB < Sinatra::Base
   end
 
   get '/hire_space' do
-    File.read('./views/hire_space.html')
+    erb (:hire_space)
   end
 
   get '/sign_up' do
-    File.read('./views/sign_up.html')
+    erb (:sign_up)
   end
 
   get '/view_listed_spaces' do
-    File.read('./views/view_listed_spaces.html')
+    erb (:view_listed_spaces)
   end
 
 end
