@@ -7,6 +7,14 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 
+require_relative 'setup_test_database'
+
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_database
+  end
+end
+
 # tell Capybara about our app class
 Capybara.app = MakersBNB
 
